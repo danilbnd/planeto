@@ -1,0 +1,57 @@
+.db-ideas {
+  margin-bottom: 94px;
+
+  &__box-lamp {
+    margin-bottom: 100px;
+    @media screen and (max-width: $medium) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__image {
+    &--left {
+      text-align: right;
+      @media screen and (max-width: $medium) {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 150px;
+      }
+
+    }
+
+    &--right {
+      @media screen and (max-width: $medium) {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__text {
+    & h2 {
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+
+    & p {
+      color: $medium-gray;
+      margin-bottom: 28px;
+    }
+
+    &--right {
+      //padding-left: 84px;
+    }
+
+    &--left {
+      //margin-right: 75px;
+      @media screen and (max-width: $medium) {
+       text-align: right;
+      }
+    }
+
+    @media screen and (max-width: $medium) {
+      margin: 0 0 20px;
+    }
+  }
+}
+

@@ -1,0 +1,80 @@
+.db-contacts {
+  padding: 35px 0 26px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    height: 2px;
+    width: 77%;
+    background: #EFEEEF;
+    position: absolute;
+    left: 12%;
+    right: 0;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+ &__block-title {
+   display: flex;
+   justify-content: space-between;
+   @media screen and (max-width:$medium) {
+     margin-bottom: 20px;
+     text-align: center;
+   }
+   @media screen and (min-width: $small) and (max-width:$medium) {
+     justify-content: center;
+     flex-direction: column;
+     margin-bottom: 20px;
+   }
+ }
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700 !important;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__logo img {
+    margin-bottom: 37px;
+    @media screen and (max-width:$medium) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    font-family: $text-font-family;
+    font-size: 14px;
+    font-weight: 300;
+    color: #434344;
+    @media screen and (max-width: $medium){
+      text-align: center;
+    }
+  }
+  &__link {
+   text-align: right;
+
+    @media screen and (max-width: $medium){
+      text-align: center;
+    }
+    & a {
+      display: block;
+      font-family: $text-font-family;
+      font-size: 24px;
+      font-weight: 300;
+      color: #232324;
+      margin-bottom: 20px;
+
+      &:hover {
+        color: #232324;
+        opacity: .7;
+      }
+    }
+  }
+}

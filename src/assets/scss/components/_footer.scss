@@ -1,0 +1,55 @@
+.db-footer {
+  padding: 24px 0 26px;
+
+  &__socials {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    @media screen and (max-width: $medium) {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    & a {
+      margin-right: 25px;
+      fill: #BDBDC6;
+      &:hover:nth-child(1) {
+        fill: #4266AB;
+      }
+      &:hover:nth-child(2) {
+        fill: #2AA3EF;
+      }
+      &:hover:nth-child(3) {
+        fill: #1795D1;
+      }
+    }
+
+  }
+  &__copyright {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    @media screen and (max-width: $medium) {
+      margin-bottom: 20px;
+    }
+    & img {
+      margin-right: 12px;
+    }
+  }
+
+  &__link-up a {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: $dark-gray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media screen and (max-width: $medium) {
+      justify-content: center;
+    }
+    &:hover {
+      color: $dark-gray;
+      opacity: .7;
+    }
+  }
+}

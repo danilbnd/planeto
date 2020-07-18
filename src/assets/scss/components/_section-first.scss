@@ -1,0 +1,35 @@
+.db-section-first {
+  background: url(../img/bg-first-sections.png) no-repeat;
+  background-size: cover;
+  background-position-y: -120px;
+  padding-bottom: 313px;
+  position: relative;
+
+  &__title {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 48px;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 5.2px;
+    //width: 100%;
+  }
+
+  &__dots {
+    list-style: none;
+    justify-content: center;
+    margin: 0px 0px 115px -50px;
+
+    & li {
+      height: 7px;
+      width: 7px;
+      border-radius: 50px;
+      background: $dark-gray;
+      margin-left: 9px;
+    }
+
+    & li:first-child {
+      margin-right: 8px;
+    }
+  }
+}

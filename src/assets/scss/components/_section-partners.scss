@@ -1,0 +1,57 @@
+.db-partners {
+  margin-bottom: 60px;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    @media screen and (max-width: $medium) {
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font: 12px $text-font-family;
+    font-style: italic;
+    color: $grayscale;
+    @media screen and (max-width: $medium) {
+      text-align: center;
+    }
+  }
+
+  &__arrow {
+    @media screen and (max-width: $medium) {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    & a {
+      width: 40px;
+      height: 36px;
+      &:first-child {
+        margin-right: 22px;
+      }
+
+      & svg {
+        vertical-align: unset;
+        &:hover {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  &__partner-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 230px;
+
+    &:hover {
+      background: $light-gray;
+    }
+  }
+}
+

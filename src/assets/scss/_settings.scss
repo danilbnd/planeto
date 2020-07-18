@@ -1,0 +1,58 @@
+$body-font-family: Dosis, sans-serif;
+$text-font-family: OpenSans, sans-serif;
+$freehand-fontfamily: Freehand575BT, sans-serif;
+
+$small: 320px;
+$medium: 768px;
+$large: 992px;
+
+body {
+  font: 300 16px/1.5 $body-font-family !important;
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: 300 !important;
+}
+
+$grayscale: #cacaca;
+$light-gray: #fafafa;
+$medium-gray: #69696A;
+$dark-gray: #494E4C;
+$white: #fff;
+$black: #000000;
+$green: #00B784;
+$green-second: #00B886;
+
+.container-my {
+  max-width: 989px;
+  margin:0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+.btn {
+  border: 2px solid #39393A !important;
+  border-radius: 8px !important;
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+
+  &__ideas {
+    width: 140px;
+    height: 40px;
+  }
+
+  &__project {
+    width: 59px;
+    height: 34px;
+    padding: .2rem .75rem !important;
+  }
+
+  &__portfolio {
+    width: 184px;
+    height: 44px;
+    padding: .5rem .75rem !important;
+  }
+}
