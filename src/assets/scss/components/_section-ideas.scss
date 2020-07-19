@@ -1,8 +1,12 @@
 .db-ideas {
-  margin-bottom: 94px;
+  margin-bottom: 96px;
+  @media screen and (max-width: $medium) {
+    margin-bottom: 20px;
+  }
+
 
   &__box-lamp {
-    margin-bottom: 100px;
+    margin-bottom: 110px;
     @media screen and (max-width: $medium) {
       margin-bottom: 30px;
     }
@@ -10,7 +14,13 @@
 
   &__image {
     &--left {
-      text-align: right;
+      padding-top: 30px;
+      margin-right: 54px;
+      @media screen and (max-width: $small) {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
       @media screen and (max-width: $medium) {
         text-align: center;
         margin-bottom: 20px;
@@ -20,32 +30,42 @@
     }
 
     &--right {
+      margin-top: -33px;
+      margin-left: 65px;
       @media screen and (max-width: $medium) {
-        text-align: center;
         margin-top: 10px;
+        margin-left: 0;
       }
     }
   }
 
   &__text {
     & h2 {
+      font-size: 40px;
+      font-weight: 300;
       text-transform: uppercase;
-      margin-bottom: 36px;
+      margin-bottom: 22px;
+      letter-spacing: 1.8px;
     }
 
     & p {
       color: $medium-gray;
-      margin-bottom: 28px;
+      margin-bottom: 30px;
+      font-size: 16px;
+      font-family: $text-font-family;
+      line-height: 1.7;
     }
 
     &--right {
-      //padding-left: 84px;
+
     }
 
     &--left {
-      //margin-right: 75px;
+      & h2 {
+        margin-bottom: 23px;
+      }
       @media screen and (max-width: $medium) {
-       text-align: right;
+        text-align: right;
       }
     }
 

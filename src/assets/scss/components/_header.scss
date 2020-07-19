@@ -1,20 +1,25 @@
 header {
   background: $green;
+  padding: 15px 0;
+}
+
+nav {
+  padding-left: 0 !important;
 }
 
 .db-header {
-  padding: 28px 189px 26px 0;
-  @media screen and (min-width: $medium) and (max-width: 1025px){
-    padding: 30px 131px 30px 0;
-  }
-  @media screen and (min-width: $small)  and (max-width: $medium){
-    padding: 30px 51px 30px 0;
-  }
 
-  & img {
-    @media screen and (max-width: $small) {
-      width: 110px;
+  &__logo img {
+    margin-right: 230px;
+    margin-left: 77px;
+    @media screen and (max-width: $medium) {
+      width: 190px;
       height: 40px;
+      margin: 0;
+    }
+    @media screen and (min-width: $large-x) and (max-width: 1025px){
+      margin-right: 90px;
+
     }
   }
 }
@@ -23,22 +28,28 @@ header {
   @media screen and (max-width: $large) {
     margin-top: 10px;
   }
-  & li {
+
+  & li .nav-link__child {
+    margin-left: 34px;
   }
+
 
   & li a {
     line-height: 1px;
     color: $white !important;
     cursor: pointer;
-    padding-left: 22px !important;
     position: relative;
-    margin-left: 18px;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
     @media screen and (max-width: $large) {
       margin-bottom: 25px;
     }
+    @media screen and (max-width: $medium) {
+      display: flex;
+      justify-content: center;
+    }
+
     &::before {
       content: '';
       background: url(../img/ball-dots.png) no-repeat;
@@ -56,13 +67,19 @@ header {
       content: '';
       height: 2px;
       background: $white;
-      width: 69%;
+      width: 90%;
       position: absolute;
-      bottom: 0px;
-      left: 15px;
-      @media screen and (max-width: $large) {
-        width: 44%
+      bottom: -7px;
+      left: 5px;
+      @media screen and (max-width: $medium) {
+        display: none;
       }
+    }
+  }
+
+  & li .nav-link__first {
+    @media screen and (max-width: $medium) {
+      padding-left: 26px;
     }
   }
 
@@ -73,4 +90,3 @@ header {
     }
   }
 }
-

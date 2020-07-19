@@ -1,5 +1,5 @@
 .db-partners {
-  margin-bottom: 60px;
+  margin-bottom: 42px;
 
   &__title {
     font-size: 36px;
@@ -22,19 +22,24 @@
   }
 
   &__arrow {
+    text-align: right;
     @media screen and (max-width: $medium) {
       margin-bottom: 20px;
       text-align: center;
     }
+
     & a {
       width: 40px;
-      height: 36px;
-      &:first-child {
-        margin-right: 22px;
+      height: 33px;
+
+      &:last-child {
+        margin-left: 20px;
+        margin-right: 6px;
       }
 
       & svg {
         vertical-align: unset;
+
         &:hover {
           fill: $white;
         }

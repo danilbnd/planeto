@@ -5,6 +5,7 @@ $freehand-fontfamily: Freehand575BT, sans-serif;
 $small: 320px;
 $medium: 768px;
 $large: 992px;
+$large-x: 1024px;
 
 body {
   font: 300 16px/1.5 $body-font-family !important;
@@ -26,7 +27,7 @@ $green-second: #00B886;
 
 .container-my {
   max-width: 989px;
-  margin:0 auto;
+  margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -34,25 +35,25 @@ $green-second: #00B886;
 
 .btn {
   border: 2px solid #39393A !important;
-  border-radius: 8px !important;
+  border-radius: 6px !important;
   text-transform: uppercase !important;
   font-size: 16px !important;
   font-weight: 700 !important;
 
   &__ideas {
-    width: 140px;
-    height: 40px;
+    width: 145px;
+    height: 43px;
   }
 
   &__project {
     width: 59px;
-    height: 34px;
+    height: 30px;
     padding: .2rem .75rem !important;
   }
 
   &__portfolio {
     width: 184px;
-    height: 44px;
+    height: 42px;
     padding: .5rem .75rem !important;
   }
 }

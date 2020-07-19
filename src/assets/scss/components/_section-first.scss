@@ -1,35 +1,91 @@
 .db-section-first {
-  background: url(../img/bg-first-sections.png) no-repeat;
+  background: url(../img/bg-first.png) no-repeat 50%;
   background-size: cover;
-  background-position-y: -120px;
-  padding-bottom: 313px;
+  background-position-y: -121px;
+  padding-bottom: 325px;
   position: relative;
+  @media screen and (min-width: $small) and (max-width: 767px) {
+    background-position: 50%;
+    padding-bottom: 50px;
+
+  }
+  @media screen and (min-width: $medium) and (max-width: 769px) {
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: $large-x) and (max-width: 1025px) {
+    background-position-y: -151px;
+    padding-bottom: 125px;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1500px) {
+    background-position-y: -121px;
+    padding-bottom: 240px;
+  }
+
 
   &__title {
     color: $white;
     text-transform: uppercase;
     font-size: 48px;
-    padding-top: 60px;
-    margin-bottom: 20px;
+    padding-top: 67px;
     letter-spacing: 5.2px;
-    //width: 100%;
+    @media screen and (max-width: $medium) {
+      padding-top: 20px;
+      text-align: center;
+      font-size: 36px;
+    }
+    @media screen and (max-width: $large-x) {
+      padding-top: 20px;
+      //padding-bottom: 20px;
+      text-align: center;
+      font-size: 36px;
+    }
+
+    &::before {
+      content: '';
+      background: url(../img/item-header.png) no-repeat;
+      height: 160px;
+      width: 159px;
+      position: absolute;
+      top: 44%;
+      left: 24.3%;
+      @media screen and (max-width: $medium) {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: '';
+      background: url(../img/item-header2.png) no-repeat;
+      height: 200px;
+      width: 149px;
+      position: absolute;
+      top: 42%;
+      right: 25%;
+      @media screen and (max-width: $medium) {
+        display: none;
+      }
+    }
   }
 
   &__dots {
     list-style: none;
     justify-content: center;
-    margin: 0px 0px 115px -50px;
+    margin: 3px 0px 108px -50px;
+    @media screen and (max-width: $medium) {
+      margin-bottom: 20px;
+    }
+
 
     & li {
       height: 7px;
       width: 7px;
       border-radius: 50px;
       background: $dark-gray;
-      margin-left: 9px;
+      margin-left: 8px;
     }
 
     & li:first-child {
-      margin-right: 8px;
+      margin-right: 9px;
     }
   }
 }
